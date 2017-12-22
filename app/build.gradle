@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+
+    defaultConfig {
+        applicationId "me.kalmanbncz.nd"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            //runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir 'src/main/libs'
+    }
+}
+configurations { natives }
+
+dependencies {
+    compile files('libs/gdx-bullet-1.4.1.jar')
+    compile project(':opencv')
+    compile "com.badlogicgames.gdx:gdx:1.4.1"
+    compile "com.badlogicgames.gdx:gdx-backend-android:1.4.1"
+    compile "com.badlogicgames.gdx:gdx-tools:1.4.1"
+    natives "com.badlogicgames.gdx:gdx-platform:1.4.1:natives-armeabi"
+    natives "com.badlogicgames.gdx:gdx-platform:1.4.1:natives-armeabi-v7a"
+    natives "com.badlogicgames.gdx:gdx-platform:1.4.1:natives-x86"
+    natives "com.badlogicgames.gdx:gdx-bullet-platform:1.4.1:natives-armeabi"
+    natives "com.badlogicgames.gdx:gdx-bullet-platform:1.4.1:natives-armeabi-v7a"
+    natives "com.badlogicgames.gdx:gdx-bullet-platform:1.4.1:natives-x86"
+    compile "com.badlogicgames.gdx:gdx-freetype:1.4.1"
+    natives "com.badlogicgames.gdx:gdx-freetype-platform:1.4.1:natives-armeabi"
+    natives "com.badlogicgames.gdx:gdx-freetype-platform:1.4.1:natives-armeabi-v7a"
+    natives "com.badlogicgames.gdx:gdx-freetype-platform:1.4.1:natives-x86"
+}

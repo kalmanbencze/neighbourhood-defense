@@ -1,0 +1,67 @@
+beamtexture.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beam1
+  rotate: false
+  xy: 194, 2
+  size: 34, 379
+  orig: 296, 434
+  offset: 130, 0
+  index: -1
+beam2
+  rotate: false
+  xy: 98, 384
+  size: 92, 380
+  orig: 296, 434
+  offset: 105, 0
+  index: -1
+beam3
+  rotate: false
+  xy: 192, 384
+  size: 55, 380
+  orig: 296, 434
+  offset: 122, 0
+  index: -1
+beam4
+  rotate: false
+  xy: 2, 2
+  size: 94, 381
+  orig: 296, 434
+  offset: 103, 0
+  index: -1
+beam5
+  rotate: false
+  xy: 2, 385
+  size: 89, 380
+  orig: 296, 434
+  offset: 107, 0
+  index: -1
+beam6
+  rotate: false
+  xy: 93, 766
+  size: 79, 380
+  orig: 296, 434
+  offset: 113, 0
+  index: -1
+beam7
+  rotate: false
+  xy: 98, 2
+  size: 94, 380
+  orig: 296, 434
+  offset: 103, 0
+  index: -1
+beam8
+  rotate: false
+  xy: 2, 767
+  size: 76, 380
+  orig: 296, 434
+  offset: 113, 0
+  index: -1
+beam9
+  rotate: false
+  xy: 174, 766
+  size: 74, 380
+  orig: 296, 434
+  offset: 114, 0
+  index: -1
