@@ -8,4 +8,3 @@ The app uses the phone's sensors to calculate the rotation the device is oriente
 NOTE:The code is outdated, the target sdk has been updated to 26 but the app will crash (for now) if the camera permission is not granted.
 
 
-[[https://github.com/kalmanbencze/repository/neighbourhood-defense/master/media/demo.jpg|alt=demo]]
